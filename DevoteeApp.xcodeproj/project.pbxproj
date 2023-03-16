@@ -17,6 +17,8 @@
 		1548AAF929C22DB800E9355E /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1548AAF629C22DB800E9355E /* sound-ding.mp3 */; };
 		1548AAFA29C22DB800E9355E /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1548AAF729C22DB800E9355E /* sound-rise.mp3 */; };
 		1548AB0729C2352900E9355E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1548AB0629C2352900E9355E /* Constants.swift */; };
+		1548AB0929C2974300E9355E /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1548AB0829C2974300E9355E /* HideKeyboardExtension.swift */; };
+		1548AB0B29C2A07400E9355E /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1548AB0A29C2A07400E9355E /* BackgroundImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		1548AAF729C22DB800E9355E /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		1548AB0129C22E2E00E9355E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1548AB0629C2352900E9355E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1548AB0829C2974300E9355E /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
+		1548AB0A29C2A07400E9355E /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				1548AAE429C22D6000E9355E /* ContentView.swift */,
+				1548AB0A29C2A07400E9355E /* BackgroundImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 		1548AAFD29C22DE500E9355E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1548AB0829C2974300E9355E /* HideKeyboardExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -209,7 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1548AB0729C2352900E9355E /* Constants.swift in Sources */,
+				1548AB0B29C2A07400E9355E /* BackgroundImageView.swift in Sources */,
 				1548AAEF29C22D6200E9355E /* DevoteeApp.xcdatamodeld in Sources */,
+				1548AB0929C2974300E9355E /* HideKeyboardExtension.swift in Sources */,
 				1548AAEC29C22D6200E9355E /* Persistence.swift in Sources */,
 				1548AAE529C22D6000E9355E /* ContentView.swift in Sources */,
 				1548AAE329C22D6000E9355E /* DevoteeAppApp.swift in Sources */,
