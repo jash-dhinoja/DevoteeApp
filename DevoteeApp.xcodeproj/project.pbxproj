@@ -19,6 +19,8 @@
 		1548AB0729C2352900E9355E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1548AB0629C2352900E9355E /* Constants.swift */; };
 		1548AB0929C2974300E9355E /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1548AB0829C2974300E9355E /* HideKeyboardExtension.swift */; };
 		1548AB0B29C2A07400E9355E /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1548AB0A29C2A07400E9355E /* BackgroundImageView.swift */; };
+		1548AB0D29C2A12200E9355E /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1548AB0C29C2A12200E9355E /* NewTaskItemView.swift */; };
+		1548AB0F29C2AF0900E9355E /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1548AB0E29C2AF0900E9355E /* BlankView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		1548AB0629C2352900E9355E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1548AB0829C2974300E9355E /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 		1548AB0A29C2A07400E9355E /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
+		1548AB0C29C2A12200E9355E /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
+		1548AB0E29C2AF0900E9355E /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 			children = (
 				1548AAE429C22D6000E9355E /* ContentView.swift */,
 				1548AB0A29C2A07400E9355E /* BackgroundImageView.swift */,
+				1548AB0C29C2A12200E9355E /* NewTaskItemView.swift */,
+				1548AB0E29C2AF0900E9355E /* BlankView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,9 +224,11 @@
 				1548AB0B29C2A07400E9355E /* BackgroundImageView.swift in Sources */,
 				1548AAEF29C22D6200E9355E /* DevoteeApp.xcdatamodeld in Sources */,
 				1548AB0929C2974300E9355E /* HideKeyboardExtension.swift in Sources */,
+				1548AB0F29C2AF0900E9355E /* BlankView.swift in Sources */,
 				1548AAEC29C22D6200E9355E /* Persistence.swift in Sources */,
 				1548AAE529C22D6000E9355E /* ContentView.swift in Sources */,
 				1548AAE329C22D6000E9355E /* DevoteeAppApp.swift in Sources */,
+				1548AB0D29C2A12200E9355E /* NewTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

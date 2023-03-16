@@ -19,34 +19,32 @@ struct ContentView: View {
     
     @State var task: String = ""
     
+    @State private var isNewTaskItemViewVisible: Bool = false
     
     //MARK: Body
     var body: some View {
         NavigationStack {
             ZStack {
+                // Main View
                 VStack {
-                    VStack(spacing: 16){
-                        TextField("New Task", text: $task)
-                            .padding()
-                            .background(Color(UIColor.systemGray6))
-                            .cornerRadius(10)
-                        Button(action: {
-                            addItem()
-                            task = ""
-                            hideKeyboard()
-                        }, label: {
-                            Spacer()
-                            Text("Save")
-                            Spacer()
-                        })
-                        .padding()
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .background(task.isEmpty ? .gray : .pink)
-                        .cornerRadius(10)
-                        .disabled(task.isEmpty)
-                    }//: Inner VStack
-                    .padding()
+//                    Header
+                    Spacer(minLength: 80)
+                    
+//                    New Task Button
+                    Button(action: {
+                        isNewTaskItemViewVisible = true
+                    }, label: {
+                        Image(systemName: "plus.circle")
+                            .font(.system(size: 30,weight: .semibold,design: .rounded))
+                        Text("New Task")
+                            .font(.system(size: 24, weight: .bold, design: .rounded))
+                    })
+                    .foregroundColor(.white)
+                    .padding(.horizontal,20)
+                    .padding(.vertical,15)
+                    .background(LinearGradient(gradient: Gradient(colors: [.pink,.blue]), startPoint: .leading, endPoint: .trailing))
+                    .clipShape(Capsule())
+                    .shadow(color: Color(red: 0, green: 0, blue: 0,opacity: 0.25),radius: 2,x: 0,y: 4)
                     
 //                    Item List View
                     List {
@@ -74,6 +72,18 @@ struct ContentView: View {
                     .frame(maxWidth: 640)
                     
                 }//: Outer VStack
+                
+//                New Task Item View
+                if isNewTaskItemViewVisible{
+                    BlankView()
+                        .onTapGesture {
+                            withAnimation(){
+                                isNewTaskItemViewVisible = false
+                            }
+                        }
+                    NewTaskItemView(isShowing: $isNewTaskItemViewVisible)
+                }
+                
             }//: ZStack
             .navigationTitle("Daily Tasks")
             .background(BackgroundImageView())
