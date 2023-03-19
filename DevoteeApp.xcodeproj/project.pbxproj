@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1502BB7029C6C778005B57FF /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502BB6F29C6C778005B57FF /* ListRowItemView.swift */; };
 		1502BB7229C6CA09005B57FF /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502BB7129C6CA09005B57FF /* CheckboxStyle.swift */; };
+		1502BB7429C6D2C9005B57FF /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502BB7329C6D2C9005B57FF /* SoundPlayer.swift */; };
 		1548AAE329C22D6000E9355E /* DevoteeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1548AAE229C22D6000E9355E /* DevoteeAppApp.swift */; };
 		1548AAE529C22D6000E9355E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1548AAE429C22D6000E9355E /* ContentView.swift */; };
 		1548AAE729C22D6200E9355E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1548AAE629C22D6200E9355E /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		1502BB6F29C6C778005B57FF /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
 		1502BB7129C6CA09005B57FF /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
+		1502BB7329C6D2C9005B57FF /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		1548AADF29C22D6000E9355E /* DevoteeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevoteeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1548AAE229C22D6000E9355E /* DevoteeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteeAppApp.swift; sourceTree = "<group>"; };
 		1548AAE429C22D6000E9355E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				1548AB0629C2352900E9355E /* Constants.swift */,
+				1502BB7329C6D2C9005B57FF /* SoundPlayer.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				1548AAE529C22D6000E9355E /* ContentView.swift in Sources */,
 				1548AAE329C22D6000E9355E /* DevoteeAppApp.swift in Sources */,
 				1502BB7229C6CA09005B57FF /* CheckboxStyle.swift in Sources */,
+				1502BB7429C6D2C9005B57FF /* SoundPlayer.swift in Sources */,
 				1548AB0D29C2A12200E9355E /* NewTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

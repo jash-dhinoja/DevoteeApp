@@ -16,8 +16,10 @@ struct CheckboxStyle: ToggleStyle {
                 .font(.system(size: 30,weight: .semibold,design: .rounded))
                 .onTapGesture {
                     configuration.isOn.toggle()
+                    configuration.isOn ? playSound(sound: "sound-rises", type: "mp3") : playSound(sound: "sound-tap", type: "mp3")
+                    feedback.notificationOccurred(.success)
                 }
-            Spacer()
+
             configuration.label
         }// HStack
     }

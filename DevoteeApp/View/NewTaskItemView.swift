@@ -51,6 +51,8 @@ struct NewTaskItemView: View {
                     addItem()
                     task = ""
                     hideKeyboard()
+                    playSound(sound: "sound-ding", type: "mp3")
+                    feedback.notificationOccurred(.success)
                 }, label: {
                     Spacer()
                     Text("Save")
@@ -59,6 +61,11 @@ struct NewTaskItemView: View {
                 })
                 .padding()
                 .font(.headline)
+                .onTapGesture {
+                    if task.isEmpty{                        
+                        playSound(sound: "sound-tap", type: "mp3")
+                    }
+                }
                 .foregroundColor(.white)
                 .background(task.isEmpty ? .gray : .blue)
                 .cornerRadius(10)

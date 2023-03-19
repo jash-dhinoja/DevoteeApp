@@ -49,6 +49,8 @@ struct ContentView: View {
 //                        Appearance Button
                         Button(action: {
                             isDarkMode.toggle()
+                            playSound(sound: "sound-tap", type: "mp3")
+                            feedback.notificationOccurred(.success)
                         }, label: {
                             Image(systemName: isDarkMode ? "moon.circle.fill" : "moon.circle")
                                 .resizable()
@@ -66,6 +68,8 @@ struct ContentView: View {
 //                    New Task Button
                     Button(action: {
                         isNewTaskItemViewVisible = true
+                        playSound(sound: "sound-ding", type: "mp3")
+                        feedback.notificationOccurred(.success)
                     }, label: {
                         Image(systemName: "plus.circle")
                             .font(.system(size: 30,weight: .semibold,design: .rounded))
@@ -94,10 +98,14 @@ struct ContentView: View {
                     .frame(maxWidth: 640)
                     
                 }//: Outer VStack
+                .blur(radius: isNewTaskItemViewVisible ? 8 : 0, opaque:  false )
+//                .transition(.move(edge: .bottom))
+                .animation(.easeOut(duration: 0.5), value: isNewTaskItemViewVisible)
                 
 //                New Task Item View
                 if isNewTaskItemViewVisible{
-                    BlankView()
+                    BlankView(backgroundColor: isDarkMode ? .black : .gray,
+                              backgroundOpacity: isDarkMode ? 0.3 : 0.5)
                         .onTapGesture {
                             withAnimation(){
                                 isNewTaskItemViewVisible = false
@@ -108,7 +116,10 @@ struct ContentView: View {
                 
             }//: ZStack
             .toolbar(.hidden)
-            .background(BackgroundImageView())
+            .background(
+                BackgroundImageView()
+                    .blur(radius: isNewTaskItemViewVisible ? 8 : 0, opaque: false)
+            )
             .background(backgroundGradient.ignoresSafeArea(.all))
             .onAppear(){
                 UITableView.appearance().backgroundColor = UIColor.clear
